@@ -1,12 +1,13 @@
 public class Animal {
 
-    public Animal(String name, int age){
+    public Animal(String name, int age, Gender gender){
         this.name = name;
         this.age = age;
+        this.gender = gender;
     }
 
     String kind;
-    String name;
-    boolean gender;
+    final String name;
+    final Gender gender;
     int age;
 }

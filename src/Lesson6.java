@@ -8,9 +8,9 @@ public class Lesson6 {
         Student natali = new Student();
         natali.firstName = "Natali";
 
-        Animal dog = new Animal("Pirat", 12);
-        Animal cat = new Animal("Barsik", 7);
-        Animal pig = new Animal("Pepa", 3);
+        Animal dog = new Animal("Pirat", 12, Gender.MALE);
+        Animal cat = new Animal("Barsik", 7, Gender.MALE);
+        Animal pig = new Animal("Pepa", 3, Gender.FEMALE);
 
         Animal[] zoo = {cat, dog, pig};
         Animal oldest = getOldestAnimal(zoo);
