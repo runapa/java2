@@ -1,6 +1,7 @@
 package lesson8;
 
 import data.Person;
+import data.SimpleTriangle;
 import data.Student;
 import data.Car;
 
@@ -20,6 +21,11 @@ public class ClassWork {
 
         System.out.println("FirstName: " + person.getFirstName());
 
+        SimpleTriangle simpleTriangle = new SimpleTriangle(9, 8, 7);
+        System.out.println("Perimeter = " + simpleTriangle.getPerimeter());
+
+        SimpleTriangle simpleTriangle1 = new SimpleTriangle(9, 8, 700);
+        System.out.println("Perimeter = " + simpleTriangle1.getPerimeter());
 
     }
 
