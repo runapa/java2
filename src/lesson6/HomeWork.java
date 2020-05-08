@@ -1,4 +1,10 @@
-public class Homework6 {
+
+package lesson6;
+
+
+import data.Car;
+
+public class HomeWork {
     public static void main(String[] args) {
         Car bmw = new Car(20000, 2009, 1980, "red", "BMW");
         Car bmwx5 = new Car(70000, 2018, 2308, "black", "BMW");

@@ -1,3 +1,5 @@
+package data;
+
 public class Car {
     public Car(int price, int year, int weight, String color, String producer){
         this.price = price;
@@ -7,9 +9,9 @@ public class Car {
         this.producer = producer;
     }
 
-    int price;
-    int year;
-    int weight;
-    String color;
-    String producer;
+    public int price;
+    public int year;
+    public int weight;
+    public String color;
+    public String producer;
 }

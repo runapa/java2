@@ -1,4 +1,6 @@
-public class Homework3 {
+package lesson3;
+
+public class HomeWork {
     public static void main(String[] args) {
         double radius = getCircuit(4);
         System.out.println(radius);

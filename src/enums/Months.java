@@ -1,3 +1,5 @@
+package enums;
+
 public enum Months {
     JANUARY("winter"),
     FEBRUARY("winter"),
@@ -16,6 +18,6 @@ public enum Months {
         this.season = season;
     }
 
-    String season;
+    public String season;
 
 }

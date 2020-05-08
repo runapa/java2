@@ -1,3 +1,5 @@
+package data;
+
 public class Animal {
 
     public Animal(String name, int age, Gender gender){

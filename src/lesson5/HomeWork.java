@@ -1,4 +1,6 @@
-public class Homework5 {
+package lesson5;
+
+public class HomeWork {
     public static void main(String[] args) {
 //        String sentence = "Please be informed that invoice will be payed tomorrow";
 //        sentenceParsing(sentence);

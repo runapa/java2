@@ -1,4 +1,6 @@
-public class Lesson3 {
+package lesson3;
+
+public class ClassWork {
     public static void main(String[] args) {
         String[] arrStr = new String[3];
         System.out.println(arrStr[0]);

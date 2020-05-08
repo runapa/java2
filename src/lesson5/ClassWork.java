@@ -1,4 +1,6 @@
-public class Lesson5 {
+package lesson5;
+
+public class ClassWork {
     public static void main(String[] args) {
 
         String [] strings = {"Ivan", "Joe", "Petr", "Olga", "Ilja"};

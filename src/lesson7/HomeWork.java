@@ -1,4 +1,8 @@
-public class Homework7 {
+package lesson7;
+
+import enums.Months;
+
+public class HomeWork {
     public static void main(String[] args) {
         Months[] month = {
                 Months.JANUARY,

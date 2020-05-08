@@ -1,3 +1,5 @@
+package enums;
+
 public enum DaysOfWeek {
     SUNDAY(false),
     MONDAY(true);

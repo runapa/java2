@@ -1,4 +1,6 @@
-public class Lesson2 {
+package lesson2;
+
+public class ClassWork {
 
     public static void main(String[] args) {
         int m = 5;

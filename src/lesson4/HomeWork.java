@@ -1,4 +1,6 @@
-public class Homework4 {
+package lesson4;
+
+public class HomeWork {
     public static void main(String[] args) {
         int [] [] result1 = getTwoDimensionalIntArray(3, 1, 3);
         printTwoDimensionalIntArray(result1);

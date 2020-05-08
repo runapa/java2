@@ -1,4 +1,6 @@
-public class Lesson4 {
+package lesson4;
+
+public class ClassWork {
     public static void main(String[] args) {
         int array[] = getOddArray();
         double average = getAverage(array);

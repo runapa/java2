@@ -1,4 +1,6 @@
-public class HomeWork1 {
+package lesson1;
+
+public class HomeWork {
 /*    ------------L1: Homework:------------
 1.Создайте программу, которая вычислит выражение 121 * ⅓ +388^3 и выведет результат на экран.
 
