@@ -5,8 +5,11 @@ import data.Triangle;
 
 public class HomeWork {
     public static void main(String[] args) {
-        Point point = new Point(0, 0, 3, 0, 0, 4);
-        Triangle triangle = new Triangle(point.getA(), point.getB(), point.getC());
-        System.out.println(triangle.getPerimeter());
+        Point a = new Point(2, 2);
+        Point b = new Point(-2, -2);
+        Point c = new Point(0, 0);
+
+        Triangle triangle = new Triangle(a, b, c);
+        System.out.println("Perimetr: " + triangle.getPerimeter());
     }
 }

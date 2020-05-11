@@ -1,9 +1,11 @@
 package lesson4;
 
+import utils.MyUtils;
+
 public class ClassWork {
     public static void main(String[] args) {
         int array[] = getOddArray();
-        double average = getAverage(array);
+        double average = MyUtils.getAverage(array);
         System.out.println(average);
         method2();
     }
@@ -19,8 +21,8 @@ public class ClassWork {
             }
             current = current + 2;
         }
-        printForward(result);
-        printReverse(result);
+        MyUtils.printForward(result);
+        MyUtils.printReverse(result);
         return result;
     }
 
@@ -53,30 +55,5 @@ public class ClassWork {
         }
         System.out.println("------------------------------------");
         System.out.println("Maximum in array is: " + array[iMin]);
-    }
-
-    public static double getAverage(int[] array) {
-        int summa = 0;
-        for (int i = 0; i < array.length; i++) {
-            summa += array[i];
-        }
-        double sum = summa / array.length;
-        return sum;
-    }
-
-    public static void printForward(int[] array) {
-        System.out.println("[");
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + ", ");
-        }
-        System.out.println("]");
-    }
-
-    public static void printReverse(int[] array) {
-        System.out.println("[");
-        for (int i = array.length - 1; i >= 0; i--) {
-            System.out.print(array[i] + ", ");
-        }
-        System.out.println("]");
     }
 }
