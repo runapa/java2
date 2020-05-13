@@ -31,19 +31,50 @@ public class AutoSalon {
         return -1;
     }
 
-    public Auto sellAuto(){
-        //TODO HW;
-
-        return null;
-    }
-
     public void printreport(){
         //TODO HW;
         //Place - Price
+        for (int i = 0; i < places.length; i++) {
+            if(places[i] != null){
+                System.out.print("[");
+                System.out.print(i + 1 + " - " + places[i].getPrice());
+                System.out.print("]");
+                System.out.println();
+            }
+        }
+        System.out.println("The balance is: " + this.balance);
     }
 
-    public Auto sellAutoByPlace(int place){
+    public Auto sellAuto(){
+        //TODO HW;
+        int finalPrice;
+        for (int i = 0; i < places.length; i++) {
+            if(places[i] != null){
+                finalPrice = (int)(places[i].getPrice() * getInterest());
+                System.out.println("The auto sold for " + finalPrice);
+                places[i] = null;
+                break;
+            }
+        }
         return null;
     }
 
+    public Auto sellAutoByPlace(int place){
+        place -= 1;
+        int finalPrice;
+        if(place < 0 || place > places.length){
+            System.out.println("Wrong place");
+        }
+        if(places[place] != null){
+            finalPrice = (int)(places[place].getPrice() * getInterest());
+            System.out.println("The auto sold for " + finalPrice);
+            this.balance =  this.balance + finalPrice;
+            places[place] = null;
+        }
+        return null;
+    }
+
+    private double  getInterest(){
+        return 1 + INTEREST;
+    }
 }

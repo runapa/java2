@@ -16,7 +16,7 @@ public class Auto {
     public Auto() {
         this.color = getRandomColors();
         this.weight = getRandomFromRange(MIN_WEIGHT, MAX_WEIGHT);
-        this.weight = getRandomFromRange(MIN_PRICE, MAX_PRICE);
+        this.price = getRandomFromRange(MIN_PRICE, MAX_PRICE);
     }
 
     public Auto(Color color, int weight, int price) {
@@ -67,7 +67,7 @@ public class Auto {
         }
     }
 
-    private void checkWeight(int price){
+    private void checkWeight(int weight){
         if(weight < MIN_WEIGHT || weight > MAX_WEIGHT){
             throw new IllegalArgumentException("Invalid weight!");
         }
