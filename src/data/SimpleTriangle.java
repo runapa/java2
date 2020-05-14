@@ -1,6 +1,6 @@
- package data;
+package data;
 
-public class SimpleTriangle {
+public class SimpleTriangle extends Shape {
     private int a;
     private int b;
     private int c;
@@ -12,7 +12,7 @@ public class SimpleTriangle {
         this.c = c;
     }
 
-    private void sidescheck(int a, int b, int c){
+    private void sidescheck(int a, int b, int c) {
         if (a <= 0 || b <= 0 || c <= 0) {
             throw new IllegalArgumentException("Not valid arguments");
         }
@@ -20,14 +20,20 @@ public class SimpleTriangle {
         int ab = a + b;
         int bc = b + c;
         int ac = a + c;
-        if (ab<c || bc < a || ac < b) {
+        if (ab < c || bc < a || ac < b) {
             throw new IllegalArgumentException("Not valid arguments");
         }
     }
 
-    public int getPerimeter() {
+    public double getPerimeter() {
+        System.out.println("Hello from Triangle");
         //return this.a + this.b + this.c;
         return a + b + c;
+    }
+
+    public double getSquare() {
+        double p = getPerimeter() / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
     public int getA() {

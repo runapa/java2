@@ -1,5 +1,7 @@
 package utils;
 
+import data.Shape;
+
 public class MyUtils {
     private MyUtils(){
 
@@ -32,5 +34,28 @@ public class MyUtils {
             System.out.print(array[i] + ", ");
         }
         System.out.println("]");
+    }
+
+    public static void findMaxSquare(Shape[] shapes){
+        Shape maxSquare = shapes[0];
+        for (int i = 0; i < shapes.length; i++) {
+            Shape current = shapes[i];
+            if (current.getPerimeter() > maxSquare.getSquare()) {
+                maxSquare = current;
+            }
+        }
+        System.out.println("Maximum square is " + maxSquare.getSquare());
+    }
+
+    public static void findMinPerimeter(Shape[] shapes){
+        Shape minPerimeter = shapes[0];
+        for (int i = 0; i < shapes.length; i++) {
+            Shape current = shapes[i];
+            if (current.getPerimeter() < minPerimeter.getPerimeter()) {
+                minPerimeter = current;
+            }
+        }
+
+        System.out.println("Minimal perimeter is " + minPerimeter.getPerimeter());
     }
 }
