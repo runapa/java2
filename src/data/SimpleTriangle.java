@@ -31,6 +31,11 @@ public class SimpleTriangle extends Shape {
         return a + b + c;
     }
 
+    @Override
+    public void methodFromParent() {
+
+    }
+
     public double getSquare() {
         double p = getPerimeter() / 2;
         return Math.sqrt(p * (p - a) * (p - b) * (p - c));

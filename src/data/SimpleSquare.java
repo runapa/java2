@@ -12,6 +12,11 @@ public class SimpleSquare extends Shape{
         return 4 * a;
     }
 
+    @Override
+    public void methodFromParent() {
+
+    }
+
     public double getSquare(){
         return a * a;
     }

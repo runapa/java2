@@ -16,4 +16,9 @@ public class SimpleCircle extends Shape{
     public double getSquare(){
         return Math.PI * (radius * radius);
     }
+
+    @Override
+    public void methodFromParent() {
+
+    }
 }

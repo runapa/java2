@@ -1,6 +1,6 @@
 package data;
 
-public class Shape {
+public abstract class Shape extends Parent{
     public double getPerimeter(){
         System.out.println("Hello from Shape");
         return 0.0;
