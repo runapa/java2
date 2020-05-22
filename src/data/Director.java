@@ -1,12 +1,16 @@
 package data;
 
-public class Director extends Worker{
+public class Director extends Worker {
     private String department;
 
 //    public Director(){
 //        super();
 //
 //    }
+
+    public String toString() {
+        return this.getClass().getSimpleName() + "{ \n department = " + department + "," + super.toString() + "\n}";
+    }
 
     public Director(String firstName, String lastName, String department) {
         super(firstName, lastName);

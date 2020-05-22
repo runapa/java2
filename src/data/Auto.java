@@ -72,4 +72,30 @@ public class Auto {
             throw new IllegalArgumentException("Invalid weight!");
         }
     }
+
+    public boolean equals(Object object){
+        if(this == object){
+            return true;
+        }
+        if(!(object instanceof Auto)){
+            return false;
+        }
+
+        Auto newObj = (Auto) object;
+
+        if(newObj.getColor() != color){
+            return false;
+        }
+        if(newObj.getPrice() != price){
+            return false;
+        }
+        if(newObj.getWeight() != weight){
+            return false;
+        }
+        return true;
+    }
+
+    public String toString(){
+        return this.getClass().getSimpleName() + "Color: " + color + ", Weight: " + weight + ", Price: " + price;
+    }
 }

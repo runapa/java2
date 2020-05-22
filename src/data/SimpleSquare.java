@@ -1,6 +1,6 @@
 package data;
 
-public class SimpleSquare extends Shape{
+public class SimpleSquare implements Shape{
     private int a;
 
     public SimpleSquare(int a) {
@@ -10,11 +10,6 @@ public class SimpleSquare extends Shape{
     public double getPerimeter(){
         System.out.println("Hello from Square");
         return 4 * a;
-    }
-
-    @Override
-    public void methodFromParent() {
-
     }
 
     public double getSquare(){

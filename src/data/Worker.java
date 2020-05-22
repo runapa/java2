@@ -10,6 +10,11 @@ public abstract class Worker {
     protected int age;
     protected long salary;
 
+    public String toString(){
+        return "\n first name  = " + firstName + ",\n last name = " + lastName + ", " +
+                "\n age = " + age + ",\n salary = " + salary;
+    }
+
     public Worker(String firstName, String lastName) {
         this(firstName, lastName, getRandomFromRange(10_000, 200_000));
     }

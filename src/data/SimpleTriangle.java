@@ -1,6 +1,6 @@
 package data;
 
-public class SimpleTriangle extends Shape {
+public class SimpleTriangle implements Shape {
     private int a;
     private int b;
     private int c;
@@ -29,11 +29,6 @@ public class SimpleTriangle extends Shape {
         System.out.println("Hello from Triangle");
         //return this.a + this.b + this.c;
         return a + b + c;
-    }
-
-    @Override
-    public void methodFromParent() {
-
     }
 
     public double getSquare() {

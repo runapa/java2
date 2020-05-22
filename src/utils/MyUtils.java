@@ -1,6 +1,7 @@
 package utils;
 
 import data.Shape;
+import enums.Name;
 
 public class MyUtils {
     private MyUtils(){
@@ -18,6 +19,13 @@ public class MyUtils {
 
     public static int getRandomFromRange(int left, int right){
         return (int) (Math.random() * (right - left) + left);
+    }
+
+    public static Name getRandomNameFromNameEnum(){
+        Name[] names = Name.values();
+        int val = names.length;
+        int result = getRandomFromRange(0, val);
+        return names[result];
     }
 
     public static void printForward(int[] array) {

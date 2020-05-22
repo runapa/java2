@@ -1,6 +1,6 @@
 package data;
 
-public class SimpleCircle extends Shape{
+public class SimpleCircle implements Shape{
     private int radius;
 
     public SimpleCircle(int radius) {
@@ -15,10 +15,5 @@ public class SimpleCircle extends Shape{
 
     public double getSquare(){
         return Math.PI * (radius * radius);
-    }
-
-    @Override
-    public void methodFromParent() {
-
     }
 }
