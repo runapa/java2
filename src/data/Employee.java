@@ -1,11 +1,18 @@
 package data;
 
-public class Employee {
+public class Employee implements Comparable<Employee>{
     protected int salary;
+    protected int age;
     protected String name;
 
     public Employee(int salary, String name) {
         this.salary = salary;
+        this.name = name;
+    }
+
+    public Employee(int salary, int age, String name) {
+        this.salary = salary;
+        this.age = age;
         this.name = name;
     }
 
@@ -15,6 +22,10 @@ public class Employee {
 
     public String getName() {
         return name;
+    }
+
+    public int getAge() {
+        return age;
     }
 
     public boolean equals(Object object){
@@ -35,7 +46,17 @@ public class Employee {
         return false;
     }
 
-    public String toString(){
-        return "Employee{Salary = " + salary + ", name = " + name + "}";
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "salary=" + salary +
+                ", age=" + age +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    @Override
+    public int compareTo(Employee o) {
+        return o.getSalary() - this.salary;
     }
 }

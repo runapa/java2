@@ -7,6 +7,13 @@ public class SimpleSquare implements Shape{
         this.a = a;
     }
 
+    @Override
+    public String toString() {
+        return "SimpleSquare{" +
+                "a=" + a +
+                '}';
+    }
+
     public double getPerimeter(){
         System.out.println("Hello from Square");
         return 4 * a;

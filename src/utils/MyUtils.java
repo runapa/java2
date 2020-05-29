@@ -48,7 +48,7 @@ public class MyUtils {
         Shape maxSquare = shapes[0];
         for (int i = 0; i < shapes.length; i++) {
             Shape current = shapes[i];
-            if (current.getPerimeter() > maxSquare.getSquare()) {
+            if (current.getSquare() > maxSquare.getSquare()) {
                 maxSquare = current;
             }
         }

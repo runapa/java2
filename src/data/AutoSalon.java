@@ -12,11 +12,13 @@ public class AutoSalon {
         places = new Auto[CAR_QUANTITY];
     }
 
-    public void buyAuto(Auto auto){
+    public void buyAuto(Auto auto) throws Exception{
         int freePlace = getFreePlace();
         if(freePlace < 0){
-            System.out.println("No free places, sell an Auto");
-            return;
+
+            throw new Exception("No free places, sell an Auto");
+            //System.out.println("No free places, sell an Auto");
+            //return;
         }
         this.balance = this.balance - auto.getPrice();
         places[freePlace] = auto;

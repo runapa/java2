@@ -62,4 +62,13 @@ public class SimpleTriangle implements Shape {
         sidescheck(this.a, this.b, c);
         this.c = c;
     }
+
+    @Override
+    public String toString() {
+        return "SimpleTriangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
 }

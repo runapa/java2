@@ -32,6 +32,7 @@ public class Pet {
 
     public static void printPetsTwins(Pet[] petsArr){
         for (int i = 0; i < petsArr.length; i++) {
+            boolean isUniq = false;
             for (int j = i + 1; j < petsArr.length; j++) {
                 if(petsArr[i].equals(petsArr[j])){
                     System.out.println("{" + petsArr[i].getName() + "[" + i + "]} has twins");

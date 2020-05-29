@@ -16,4 +16,11 @@ public class SimpleCircle implements Shape{
     public double getSquare(){
         return Math.PI * (radius * radius);
     }
+
+    @Override
+    public String toString() {
+        return "SimpleCircle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
