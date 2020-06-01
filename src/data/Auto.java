@@ -1,6 +1,11 @@
 package data;
 
 import enums.Color;
+
+import java.util.Objects;
+import java.util.Set;
+import java.util.TreeSet;
+
 import static utils.MyUtils.getRandomFromRange;
 
 public class Auto {
@@ -33,6 +38,11 @@ public class Auto {
 
         int randomIndex = getRandomFromRange(0, colors.length -1);
         return colors[randomIndex];
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, weight, price);
     }
 
     public Color getColor() {
@@ -73,6 +83,11 @@ public class Auto {
         }
     }
 
+    private Auto getAutoWithMaxPrice(TreeSet<Auto> autos){
+        return autos.last();
+    }
+
+    @Override
     public boolean equals(Object object){
         if(this == object){
             return true;
